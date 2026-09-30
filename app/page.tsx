@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Clínica Odontológica Oral Integralle | Manaus - AM',
+  title: 'Top Clinic - Monte Alegre | Monte Alegre - PA',
   description:
-    'Clínica Odontológica Oral Integralle (4.6 ★, 89 avaliações no Google Maps), em Chapada, Manaus - AM.',
+    'Top Clinic - Monte Alegre (4.7 ★, 9 avaliações no Google Maps), em Cidade Alta, Monte Alegre - PA.',
   pathname: '/',
 });
 

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { CLINIC_INFO } from './clinic-data';
 
-export const BASE_URL = 'https://dentalstudiomanaus.com.br';
+export const BASE_URL = 'http://localhost:3000';
 
 export function createMetadata({
   title,

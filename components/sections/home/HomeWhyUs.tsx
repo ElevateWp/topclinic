@@ -5,20 +5,20 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
 const REASONS = [
   {
-    title: 'Biological Tooth Preservation',
-    description: 'We treat surgical extraction as a last resort. Operating microscopes allow us to preserve natural root structures and vital enamel whenever biologically viable.',
+    title: 'Evite força excessiva',
+    description: 'Escovar com força pode desgastar o esmalte e favorecer a retração gengival.',
   },
   {
-    title: 'Microscopic & CBCT Guided Accuracy',
-    description: 'Every surgical fixture and root canal is pre-planned in three dimensions with low-dose digital tomography to prevent anatomical nerve or sinus complications.',
+    title: 'Prefira cerdas macias',
+    description: 'Cerdas macias ajudam a proteger os dentes e a gengiva durante a escovação.',
   },
   {
-    title: 'Proactive Patient Comfort & Sedation',
-    description: 'We eliminate procedural stress through computer-controlled local anesthesia delivery, noise-canceling acoustics, and gentle anxiety-free care.',
+    title: 'Escove por pelo menos 2 minutos',
+    description: 'Dedique tempo suficiente a cada escovação para cuidar de todas as áreas da boca.',
   },
   {
-    title: 'Sterile Operating Environments',
-    description: 'Our surgical suites maintain medical-grade air filtration and autoclave sterilization protocols exceeding international dental guidelines.',
+    title: 'Cuide da gengiva e da língua',
+    description: 'A linha da gengiva acumula placa e a língua acumula bactérias que afetam o hálito e a saúde bucal.',
   },
 ];
 
@@ -31,10 +31,10 @@ export default function HomeWhyUs() {
           <div className="lg:col-span-6">
             <AnimateOnScroll animation="fade-right" duration={0.85}>
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                Clinical Methodology
+                Dica da Top Clinic
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Por que escolher a Clínica Oral Integralle
+                Erros comuns na escovação
               </h2>
 
               <div className="divide-y divide-mist">
@@ -65,8 +65,8 @@ export default function HomeWhyUs() {
                 <div className="col-span-2 relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
-                      src="/images/clinic-treatment-room-8.jpg"
-                      alt="Sala de tratamento odontológico da Clínica Oral Integralle"
+                      src="/images/top-clinic-treatment-room.jpg"
+                      alt="Sala de tratamento odontológico da Clínica Top Clinic"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
@@ -79,7 +79,7 @@ export default function HomeWhyUs() {
                 {/* Second interior image */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/clinic-plaque-detail.jpg"
+                    src="/images/top-clinic-reception-detail.jpg"
                     alt="Detalhe da sinalização da clínica"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
@@ -87,16 +87,16 @@ export default function HomeWhyUs() {
                   />
                 </div>
                 {/* Doctor portrait */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F8F7F2] overflow-hidden border border-mist shadow-sm">
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F8F7F3] overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/clinic-team-11.jpg"
-                    alt="Our Doctor"
+                    src="/images/dr-netto-mac.png"
+                    alt="Dr. Netto Mac"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-[#252525]/80 text-paper font-body text-12 px-3 py-2 text-center">
-                    Our Doctor
+                    Dr. Netto Mac
                   </div>
                 </div>
               </div>

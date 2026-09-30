@@ -102,7 +102,7 @@ export default function HomeHero() {
     };
   }, []);
 
-  const headline = 'Restorative dentistry shaped by clinical precision and calm.';
+  const headline = 'Seu sorriso merece cuidado e atenção individualizada.';
   const headlineWords = headline.split(' ');
 
   return (
@@ -111,8 +111,8 @@ export default function HomeHero() {
       className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-paper overflow-hidden py-12 sm:py-16 md:py-24"
     >
       <Image
-        src="/images/clinic-treatment-room-8.jpg"
-        alt="Sala de atendimento da Clínica Oral Integralle"
+        src="/images/top-clinic-treatment-room.jpg"
+        alt="Sala de atendimento da Top Clinic - Monte Alegre"
         fill
         priority
         sizes="100vw"
@@ -129,9 +129,9 @@ export default function HomeHero() {
           <div className="lg:col-span-8 flex flex-col justify-center">
             {/* Semantic Single H1 */}
             <div className="flex items-center gap-3 mb-4 md:mb-5">
-              <span aria-hidden="true" className="h-px w-8 bg-[#D4AF0A]" />
-              <span className="font-body text-[11px] text-[#737373] uppercase tracking-[0.14em]">
-                Your smile. Our priority.
+              <span aria-hidden="true" className="h-px w-8 bg-[#C99425]" />
+              <span className="font-body text-[11px] text-[#77736A] uppercase tracking-[0.14em]">
+                Top Clinic • Monte Alegre
               </span>
             </div>
             <h1
@@ -146,7 +146,7 @@ export default function HomeHero() {
                       ref={(el) => {
                         if (el) wordsRef.current[idx] = el;
                       }}
-                      className={`inline-block will-change-transform ${['shaped', 'by', 'clinical'].includes(word) ? 'text-[#D4AF0A]' : ''}`}
+                      className={`inline-block will-change-transform ${['cuidado', 'e', 'atenção'].includes(word) ? 'text-[#C99425]' : ''}`}
                     >
                       {word}
                     </span>
@@ -162,7 +162,7 @@ export default function HomeHero() {
               ref={paraRef}
               className="font-body text-15 sm:text-17 md:text-21 text-forest-ink/90 leading-relaxed mb-8 md:mb-10 max-w-2xl"
             >
-              A Clínica Odontológica Oral Integralle oferece atendimento odontológico em Chapada, Manaus.
+              Pequenos cuidados diários fazem diferença para um sorriso saudável. Na Top Clinic, cada detalhe do atendimento é pensado para oferecer cuidado, excelência e atenção individualizada.
             </p>
 
             <div
@@ -173,7 +173,7 @@ export default function HomeHero() {
                 Agendar Consulta
               </Button>
               <Button
-                href={`https://api.whatsapp.com/send?phone=5592985587841`}
+                href={`https://api.whatsapp.com/send?phone=5593992113965`}
                 variant="ghost"
                 size="lg"
                 className="w-full sm:w-auto font-medium"
@@ -186,11 +186,11 @@ export default function HomeHero() {
               ref={locationRef}
               className="font-body text-13 text-[#252525]/70 flex flex-wrap items-center gap-2"
             >
-              <span className="font-medium text-[#252525]">Chapada, Manaus</span>
+              <span className="font-medium text-[#252525]">Monte Alegre, Pará</span>
               <span className="hidden sm:inline">•</span>
               <span>{CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.suite}</span>
               <span className="hidden sm:inline">•</span>
-              <span className="text-[#252525] font-semibold">★ 4.6 · 89 avaliações</span>
+              <span className="text-[#252525] font-semibold">★ 4.7 · 9 avaliações</span>
             </div>
           </div>
 
@@ -199,16 +199,16 @@ export default function HomeHero() {
             ref={infoRef}
             className="lg:col-span-4 lg:pl-4 flex flex-col justify-center"
           >
-            <div className="p-6 sm:p-8 bg-[#F8F7F2] border border-[#E6E1D2] shadow-sm flex flex-col space-y-4">
+            <div className="p-6 sm:p-8 bg-[#F8F7F3] border border-[#E8E1D2] shadow-sm flex flex-col space-y-4">
               <span className="font-body text-13 text-[#252525] uppercase tracking-wider font-semibold">
-                Destaques Clínicos
+                Dica de saúde bucal
               </span>
               <p className="font-body text-13 sm:text-15 text-[#252525]/90 leading-relaxed">
-                <strong className="text-[#252525] font-semibold">&ldquo;Clínica Odontológica Oral Integralle&rdquo;</strong> &mdash; Clínica odontológica em Chapada, Manaus, Amazonas.
+                <strong className="text-[#252525] font-semibold">Sua melhor versão começa pelo seu sorriso.</strong> Escove por pelo menos 2 minutos, use cerdas macias e limpe também a linha da gengiva e a língua.
               </p>
-              <div className="pt-3 border-t border-[#E6E1D2] flex items-center justify-between text-13 font-body text-[#252525]/70">
-                <span>Manaus - AM</span>
-                <span className="text-[#252525] font-semibold">Avaliação 4.6 ★ · 89 avaliações</span>
+              <div className="pt-3 border-t border-[#E8E1D2] flex items-center justify-between text-13 font-body text-[#252525]/70">
+                <span>Monte Alegre - PA</span>
+                <span className="text-[#252525] font-semibold">Avaliação 4.7 ★ · 9 avaliações</span>
               </div>
             </div>
           </div>

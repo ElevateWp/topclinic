@@ -12,8 +12,8 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/dental-implants/', label: 'Ver detalhes sobre Implantes e Carga Imediata →' },
   },
   {
-    question: 'O consultório realiza atendimento de odontologia domiciliar em Manaus?',
-    answer: 'Sim! O A equipe odontológica oferece atendimento domiciliar especializado para pacientes idosos, acamados ou com dificuldades de locomoção, com equipamentos portáteis modernos.',
+    question: 'O consultório realiza atendimento de odontologia domiciliar em Monte Alegre?',
+    answer: 'Entre em contato pelo WhatsApp para consultar os serviços e horários disponíveis.',
     relatedLink: { href: '/contact/', label: 'Solicitar Atendimento Domiciliar →' },
   },
   {
@@ -27,8 +27,8 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/book-appointment/', label: 'Agendar Consulta Online →' },
   },
   {
-    question: 'Onde fica localizada a Clínica Odontológica Oral Integralle?',
-    answer: 'Av. Constantino Nery, 3245 - Chapada, Manaus - AM, 69050-082, Brazil. Plus Code: WX3C+8X Chapada, Manaus - Amazonas, Brazil.',
+    question: 'Onde fica localizada a Top Clinic - Monte Alegre?',
+    answer: 'Prédio da Concep contabilidade - Av. Pres. Kenedy, APTO 1 - Cidade Alta, Monte Alegre - PA, 68220-000, Brazil. Plus Code: 2W2H+R5 Monte Alegre, Pará, Brazil.',
     relatedLink: { href: '/contact/', label: 'Ver Mapa e Rotas no Google Maps →' },
   },
 ];
@@ -47,7 +47,7 @@ export default function HomeFaqs() {
               Perguntas frequentes sobre nossos tratamentos
             </h2>
             <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-              Respostas claras sobre implantes de carga imediata, aparelhos ortodônticos e atendimento odontológico na Dental Studio em Manaus.
+              Respostas claras sobre implantes de carga imediata, aparelhos ortodônticos e atendimento odontológico na Top Clinic em Monte Alegre.
             </p>
             <div className="p-6 bg-mist/40 border border-mist">
               <span className="font-body text-13 text-forest font-medium block mb-1">
@@ -57,7 +57,7 @@ export default function HomeFaqs() {
                 Fale diretamente conosco pelo WhatsApp e tire todas as suas dúvidas.
               </p>
               <a
-                href={`https://api.whatsapp.com/send?phone=5592985587841`}
+                href={`https://api.whatsapp.com/send?phone=5593992113965`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-body text-13 text-forest font-medium underline underline-offset-4"

@@ -12,41 +12,41 @@ export default function HomeGallery() {
             Nossa Estrutura
           </span>
           <h2 className="font-display text-33 md:text-41 text-[#252525]">
-            Clínica Oral Integralle em Manaus — Chapada
+            Clínica Top Clinic em Monte Alegre — Cidade Alta
           </h2>
         </AnimateOnScroll>
 
         {/* Asymmetric Grid Row 1 */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch mb-6">
-          {/* Item 1: Our Doctor portrait */}
-          <AnimateOnScroll animation="fade-right" duration={0.85} className="md:col-span-5 min-h-[380px] md:min-h-[440px] relative bg-[#F8F7F2] overflow-hidden border border-[#E6E1D2] shadow-sm">
+          {/* Item 1: Dr. Netto Mac portrait */}
+          <AnimateOnScroll animation="fade-right" duration={0.85} className="md:col-span-5 min-h-[380px] md:min-h-[440px] relative bg-[#F8F7F3] overflow-hidden border border-[#E8E1D2] shadow-sm">
             <MediaParallax speed={0.06} className="w-full h-full">
               <Image
-                src="/images/clinic-team-11.jpg"
-                alt="Our Doctor"
+                src="/images/dr-netto-mac.png"
+                alt="Dr. Netto Mac"
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover object-top"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#252525]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Our Doctor
+              Dr. Netto Mac
             </div>
           </AnimateOnScroll>
 
-          {/* Item 2: Treatment room */}
-          <AnimateOnScroll animation="fade-down" duration={0.85} className="md:col-span-7 min-h-[380px] md:min-h-[440px] relative bg-[#E6E1D2] overflow-hidden border border-[#E6E1D2] shadow-sm">
+          {/* Item 2: Reception */}
+          <AnimateOnScroll animation="fade-down" duration={0.85} className="md:col-span-7 min-h-[380px] md:min-h-[440px] relative bg-[#E8E1D2] overflow-hidden border border-[#E8E1D2] shadow-sm">
             <MediaParallax speed={0.08} className="w-full h-full">
               <Image
-                src="/images/clinic-treatment-room-8.jpg"
-                alt="Sala de tratamento odontológico da Clínica Oral Integralle"
+                src="/images/top-clinic-reception.jpg"
+                alt="Recepção da Top Clinic"
                 fill
                 sizes="(max-width: 768px) 100vw, 60vw"
                 className="object-cover"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#252525]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Sala de Tratamento Odontológico
+              Recepção da Top Clinic
             </div>
           </AnimateOnScroll>
         </div>
@@ -54,50 +54,50 @@ export default function HomeGallery() {
         {/* Second Row: 3 Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Item 3: Consultation office */}
-          <AnimateOnScroll animation="zoom-in" duration={0.8} className="aspect-[4/3] relative bg-[#E6E1D2] overflow-hidden border border-[#E6E1D2] shadow-sm">
+          <AnimateOnScroll animation="zoom-in" duration={0.8} className="aspect-[4/3] relative bg-[#E8E1D2] overflow-hidden border border-[#E8E1D2] shadow-sm">
             <MediaParallax speed={0.05} className="w-full h-full">
               <Image
-                src="/images/clinic-reception-13.jpg"
-                alt="Recepção da Clínica Oral Integralle"
+                src="/images/top-clinic-office.jpg"
+                alt="Escritório da Top Clinic"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#252525]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Recepção Oral Integralle
+              Escritório da Top Clinic
             </div>
           </AnimateOnScroll>
 
           {/* Item 4: Clinic identity wall */}
-          <AnimateOnScroll animation="zoom-in" duration={0.8} delay={0.1} className="aspect-[4/3] relative bg-[#E6E1D2] overflow-hidden border border-[#E6E1D2] shadow-sm">
+          <AnimateOnScroll animation="zoom-in" duration={0.8} delay={0.1} className="aspect-[4/3] relative bg-[#E8E1D2] overflow-hidden border border-[#E8E1D2] shadow-sm">
             <MediaParallax speed={0.07} className="w-full h-full">
               <Image
-                src="/images/clinic-brand-wall-9.jpg"
-                alt="Identidade visual Oral Integralle"
+                src="/images/top-clinic-reception-detail.jpg"
+                alt="Detalhe da recepção da Top Clinic"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#252525]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Identidade Oral Integralle
+              Detalhe da recepção
             </div>
           </AnimateOnScroll>
 
-          {/* Item 5: Kids area */}
-          <AnimateOnScroll animation="zoom-in" duration={0.8} delay={0.2} className="aspect-[4/3] relative bg-[#F8F7F2] overflow-hidden border border-[#E6E1D2] shadow-sm sm:col-span-2 md:col-span-1">
+          {/* Item 5: Clinic exterior */}
+          <AnimateOnScroll animation="zoom-in" duration={0.8} delay={0.2} className="aspect-[4/3] relative bg-[#F8F7F3] overflow-hidden border border-[#E8E1D2] shadow-sm sm:col-span-2 md:col-span-1">
             <MediaParallax speed={0.06} className="w-full h-full">
               <Image
-                src="/images/clinic-kids-room-12.jpg"
-                alt="Espaço infantil da clínica"
+                src="/images/top-clinic-exterior.jpg"
+                alt="Exterior da Top Clinic"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover object-top"
               />
             </MediaParallax>
             <div className="absolute bottom-3 left-3 bg-[#252525]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-              Espaço infantil
+              Exterior da clínica
             </div>
           </AnimateOnScroll>
         </div>

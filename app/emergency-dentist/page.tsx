@@ -10,24 +10,24 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata, generateFaqSchema } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Atendimento Odontológico de Urgência em Manaus | Our Doctor',
+  title: 'Contato odontológico em Monte Alegre | Top Clinic',
   description:
-    'Atendimento odontológico para dor de dente intensa, dente quebrado ou emergências em Manaus. WhatsApp/Telefone: +55 92 99265-6280.',
+    'Fale com a Top Clinic - Monte Alegre pelo WhatsApp ou telefone: +55 93 99211-3965. Consulte os horários de atendimento disponíveis.',
   pathname: '/emergency-dentist/',
 });
 
 const EMERGENCY_FAQS = [
   {
     question: 'Como funciona o atendimento de urgência para dor de dente?',
-    answer: 'Pacientes com dor aguda, trauma ou inchaço são priorizados para atendimento rápido. Entre em contato pelo WhatsApp (+55 92 99265-6280) para orientação e agendamento.',
+    answer: 'Entre em contato pelo WhatsApp (+55 93 99211-3965) para consultar a disponibilidade e agendar.',
   },
   {
     question: 'O consultório oferece atendimento domiciliar de urgência?',
-    answer: 'Sim, o A equipe odontológica realiza odontologia domiciliar para pacientes acamados ou com limitações de locomoção em Manaus.',
+    answer: 'Entre em contato pelo WhatsApp (+55 93 99211-3965) para consultar os serviços disponíveis.',
   },
   {
     question: 'O que fazer caso um dente quebre ou caia por trauma?',
-    answer: 'Segure o dente apenas pela coroa, nunca pela raiz. Guarde-o em leite ou saliva e venha imediatamente ao consultório ou entre em contato pelo nosso WhatsApp (+55 92 99265-6280).',
+    answer: 'Entre em contato pelo WhatsApp (+55 93 99211-3965) para consultar a disponibilidade e receber orientações.',
   },
 ];
 
@@ -86,7 +86,7 @@ export default function EmergencyDentistPage() {
                 {CLINIC_INFO.primaryLocation.city}, {CLINIC_INFO.primaryLocation.state} {CLINIC_INFO.primaryLocation.postalCode}
               </address>
               <div className="pt-3 border-t border-mist/20 text-13 text-paper/80 font-body">
-                Civic Center Plaza • Direct Ground Floor Elevator
+                {CLINIC_INFO.primaryLocation.landmarks}
               </div>
               </AnimateOnScroll>
             </div>
@@ -261,7 +261,7 @@ export default function EmergencyDentistPage() {
                 Speak directly with our on-call dental team
               </h2>
               <p className="font-body text-17 text-paper/90 leading-relaxed mb-8 max-w-2xl">
-                We accept emergency calls 24 hours a day, 7 days a week. Our clinical staff will immediately assess your symptoms, advise on pain management, and prepare our surgical suite for your arrival.
+                Entre em contato com a Top Clinic pelo WhatsApp para consultar os horários de atendimento e solicitar uma avaliação.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Button
@@ -270,7 +270,7 @@ export default function EmergencyDentistPage() {
                   size="lg"
                   className="font-bold text-17"
                 >
-                  Call {CLINIC_INFO.contact.emergencyPhone}
+                  WhatsApp {CLINIC_INFO.contact.whatsapp}
                 </Button>
                 <Button
                   href={`https://wa.me/${CLINIC_INFO.contact.whatsapp.replace(/[^0-9]/g, '')}`}
@@ -290,7 +290,7 @@ export default function EmergencyDentistPage() {
                 Walk-In Triage Policy
               </span>
               <p className="font-body text-13 text-paper/80 leading-relaxed">
-                While we recommend calling ahead so we can prepare a sterile suite, true acute dental trauma walk-ins are welcomed directly at our Civic Center pavilion during business hours.
+                Consulte os horários de atendimento e o endereço da clínica antes de sua visita.
               </p>
               </AnimateOnScroll>
             </div>
@@ -325,22 +325,12 @@ export default function EmergencyDentistPage() {
               <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
               <span className="font-body text-13 text-forest-ink/60 block mb-2">Operating Hours</span>
               <div className="border border-mist divide-y divide-mist bg-paper font-body text-13">
-                <div className="p-3 flex justify-between">
-                  <span>Monday – Thursday</span>
-                  <span className="tabular-nums">08:00 – 17:30</span>
-                </div>
-                <div className="p-3 flex justify-between">
-                  <span>Friday</span>
-                  <span className="tabular-nums">08:00 – 16:30</span>
-                </div>
-                <div className="p-3 flex justify-between">
-                  <span>Saturday</span>
-                  <span className="tabular-nums">09:00 – 14:00</span>
-                </div>
-                <div className="p-3 flex justify-between bg-mist/40 text-forest font-medium">
-                  <span>Sunday & After-Hours</span>
-                  <span>24/7 On-Call Triage Phone</span>
-                </div>
+                {CLINIC_INFO.schedule.map((item) => (
+                  <div className="p-3 flex justify-between" key={item.day}>
+                    <span>{item.day}</span>
+                    <span className="tabular-nums">{item.hours}</span>
+                  </div>
+                ))}
               </div>
               </AnimateOnScroll>
             </div>
@@ -377,7 +367,7 @@ export default function EmergencyDentistPage() {
             Do not endure severe dental pain.
           </h2>
           <p className="font-body text-15 md:text-17 text-paper/80 mb-8 max-w-xl">
-            Our Doctor is here to help relieve your pain and preserve your natural tooth structure.
+            Dr. Netto Mac is here to help relieve your pain and preserve your natural tooth structure.
           </p>
           <Button
             href={`tel:${CLINIC_INFO.contact.emergencyPhone.replace(/[^0-9+]/g, '')}`}

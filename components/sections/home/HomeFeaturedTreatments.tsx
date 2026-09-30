@@ -21,7 +21,7 @@ export default function HomeFeaturedTreatments() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <AnimateOnScroll animation="fade-right" duration={0.9} className="lg:col-span-6 order-2 lg:order-1">
               <span className="font-body text-13 text-[#252525] uppercase tracking-wider block mb-2 font-medium">
-                Our Doctor • Implantes & Carga Imediata
+                Dr. Netto Mac • Implantes & Carga Imediata
               </span>
               <h3 className="font-display text-26 md:text-33 text-[#252525] mb-4">
                 Implantes Carga Imediata: Seu Sorriso Recuperado em 1 Dia
@@ -29,7 +29,7 @@ export default function HomeFeaturedTreatments() {
               <p className="font-body text-15 md:text-17 text-[#252525]/80 leading-relaxed mb-6">
                 Com a técnica de carga imediata, a equipe odontológica restabelece dentes perdidos e a segurança do sorriso em apenas 1 dia, proporcionando agilidade, estética e recuperação rápida.
               </p>
-              <div className="p-4 bg-[#F8F7F2] border-l-4 border-[#252525] mb-6 rounded-sm">
+              <div className="p-4 bg-[#F8F7F3] border-l-4 border-[#252525] mb-6 rounded-sm">
                 <span className="font-body text-13 text-[#252525]/80">
                   <strong className="text-[#252525] font-semibold">Destaque:</strong> Recuperação rápida da função mastigatória e autoestima sem esperas prolongadas.
                 </span>
@@ -42,8 +42,8 @@ export default function HomeFeaturedTreatments() {
             <AnimateOnScroll animation="fade-left" duration={0.9} className="lg:col-span-6 order-1 lg:order-2">
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/clinic-team-11.jpg"
-                  alt="Our Doctor"
+                  src="/images/dr-netto-mac.png"
+                  alt="Dr. Netto Mac"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover object-top"
@@ -57,8 +57,8 @@ export default function HomeFeaturedTreatments() {
             <AnimateOnScroll animation="fade-right" duration={0.9} className="lg:col-span-6">
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/clinic-brand-wall-9.jpg"
-                  alt="Identidade visual Oral Integralle"
+                  src="/images/top-clinic-reception-detail.jpg"
+                  alt="Detalhe da recepção da Top Clinic"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -68,7 +68,7 @@ export default function HomeFeaturedTreatments() {
 
             <AnimateOnScroll animation="fade-left" duration={0.9} className="lg:col-span-6">
               <span className="font-body text-13 text-[#252525] uppercase tracking-wider block mb-2 font-medium">
-                Our Doctor • Ortodontia & Especialidades
+                Dr. Netto Mac • Ortodontia & Especialidades
               </span>
               <h3 className="font-display text-26 md:text-33 text-[#252525] mb-4">
                 Aparelhos Ortodônticos e Cuidado Minucioso
@@ -76,7 +76,7 @@ export default function HomeFeaturedTreatments() {
               <p className="font-body text-15 md:text-17 text-[#252525]/80 leading-relaxed mb-6">
                 Planejamento ortodôntico de precisão e tratamentos restauradores conduzidos com extrema atenção e competência pela equipe odontológica, garantindo alinhamento e saúde bucal completa.
               </p>
-              <div className="p-4 bg-[#F8F7F2] border-l-4 border-[#252525] mb-6 rounded-sm">
+              <div className="p-4 bg-[#F8F7F3] border-l-4 border-[#252525] mb-6 rounded-sm">
                 <span className="font-body text-13 text-[#252525]/80">
                   <strong className="text-[#252525] font-semibold">Resultado:</strong> Harmonia do sorriso, mordida equilibrada e atendimento acolhedor.
                 </span>

@@ -18,9 +18,9 @@ const service = SERVICES.find((s) => s.slug === 'teeth-whitening')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Clareamento Dental em Manaus | Our Doctor',
+  title: 'Clareamento Dental em Monte Alegre | Dr. Netto Mac',
   description:
-    'Clareamento dental em consultório e caseiro supervisionado com segurança e proteção ao esmalte pela equipe odontológica em Manaus.',
+    'Clareamento dental em consultório e caseiro supervisionado com segurança e proteção ao esmalte pela equipe odontológica em Monte Alegre.',
   pathname: '/teeth-whitening/',
 });
 

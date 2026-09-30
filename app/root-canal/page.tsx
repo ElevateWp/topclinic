@@ -17,9 +17,9 @@ const service = SERVICES.find((s) => s.slug === 'root-canal')!;
 const leadDentist = DENTISTS.find((d) => d.id === service.assignedDentistId) || DENTISTS[0];
 
 export const metadata: Metadata = createMetadata({
-  title: 'Tratamento de Canal em Manaus | Our Doctor',
+  title: 'Tratamento de Canal em Monte Alegre | Dr. Netto Mac',
   description:
-    'Tratamento de canal moderno, seguro e sem dor em Manaus com a equipe odontológica na Dental Studio.',
+    'Tratamento de canal moderno, seguro e sem dor em Monte Alegre com a equipe odontológica na Top Clinic.',
   pathname: '/root-canal/',
 });
 
